@@ -1,6 +1,12 @@
 # Menentukan Image
 FROM node:18.16
 
+# Workdir
+WORKDIR /app
+
+# Copy File to Iamge
+ADD . /app
+
 # Perintah yang dijalankan
 RUN apt update -y && npm install
 
