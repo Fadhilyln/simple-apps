@@ -2,7 +2,7 @@
 FROM node:18.16
 
 # Perintah yang dijalankan
-RUN apt update -y
+RUN apt update -y && npm install
 
 # Copy file to image
 ADD . /app
